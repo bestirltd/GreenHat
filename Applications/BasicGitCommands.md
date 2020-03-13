@@ -1,7 +1,7 @@
-##Basic Git Notes
+# Basic Git Notes
 
 
-New Repo
+##### New Repo
 ```
 echo "# temp" >> README.md
 git init
@@ -11,14 +11,29 @@ git remote add origin https://github.com/<username>/<repo_name>.git
 git push -u origin master
 ```
 
-an existing repository
+##### upload an existing repository to newly created repo
 ```
 git remote add origin https://github.com/<username>/<repo_name>.git
 git push -u origin master
 ```
 
+##### Add changes to repo
+```
+git add --all
+#Or can add single file/s
+git add README.md
 
-###Gitea_Self_Hosted_Notes
+git commit -m "message"
+git push
+```
+
+
+##### Pull changes from remote
+`git pull`
+
+
+
+## Gitea_Self_Hosted_Notes
 IF using https (self signed) for the pull and push and maybe even fetch you need to add http.sslVerify=false 
 
 ```
